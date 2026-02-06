@@ -99,7 +99,7 @@ def send_one_packet(sock, packet_data, seq_num, packet_num):
             # ------DEBUG END------
                     
         except socket.timeout:
-            # Didn't get ACK in time, so retry it
+            # Didn't get ACK in time, so retry it!
             # ------DEBUG START------
             print(f"TIMEOUT on packet {packet_num}, retrying...", file=sys.stderr)
             # ------DEBUG END------
